@@ -27,9 +27,9 @@ create table if not exists b17_dataset.stack_data as select * FROM bigquery-publ
  tags STRING,
  view_count INTEGER )
 PARTITION BY date(creation_date)
-  cluster by id,title,body;
+  cluster by id,title,body,date;
   
-  
+  --partition and cluster by id,title,body,date
  -- PARTITION BY
  --date(partition by cluster); 
   
