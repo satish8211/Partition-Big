@@ -31,7 +31,7 @@ PARTITION BY date(creation_date)
   
   
  -- PARTITION BY
- --date(creation_date);
+ --date(partition by cluster); 
   
 --load data from non partition table to new partition table   
 insert into 'b17_dataset.stack_data_partition' select * from b17_dataset.stack_data;
